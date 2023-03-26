@@ -13,7 +13,7 @@
 Basta instalar através do npm (ou gerenciador favorito):
 
 ```shell
-npm i @joaoalbertosv/eslint-config
+npm i -D @joaoalbertosv/eslint-config 
 ```
 
 ## Uso
