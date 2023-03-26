@@ -13,7 +13,7 @@ module.exports = {
   plugins: ["@typescript-eslint", "eslint-plugin-import-helpers"],
   rules: {
     camelcase: "warn",
-    "no-console": "off",
+    "no-console": "warn",
     "import/no-unresolved": "error",
     "@typescript-eslint/naming-convention": [
       "error",
