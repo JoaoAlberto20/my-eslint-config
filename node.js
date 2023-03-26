@@ -2,19 +2,25 @@ module.exports = {
   env: {
     es2021: true,
     node: true,
-    jest: true,
   },
-  extends: ["airbnb-base", "plugin:@typescript-eslint/recommended"],
-  parser: "@typescript-eslint/parser",
+  extends: ['airbnb-base', 'plugin:prettier/recommended', "plugin:@typescript-eslint/recommended"],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["@typescript-eslint", "eslint-plugin-import-helpers"],
+  plugins: ['@typescript-eslint', "eslint-plugin-import-helpers"],
   rules: {
-    camelcase: "warn",
+    "camelcase": "warn",
     "no-console": "warn",
     "import/no-unresolved": "error",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "lines-between-class-members": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
@@ -26,39 +32,29 @@ module.exports = {
         },
       },
     ],
-    "class-methods-use-this": "off",
-    "import/prefer-default-export": "off",
-    "no-shadow": "off",
-    "no-console": "off",
-    "no-useless-constructor": "off",
-    "no-empty-function": "off",
-    "lines-between-class-members": "off",
-    "import/extensions": [
-      "error",
-      "ignorePackages",
-      {
-        ts: "never",
-      },
-    ],
     "import-helpers/order-imports": [
       "warn",
       {
         newlinesBetween: "always",
-        groups: ["module", "/^@shared/", ["parent", "sibling", "index"]],
+        groups: ["module", "/^@/", ["parent", "sibling", "index"]],
         alphabetize: { order: "asc", ignoreCase: true },
       },
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      { devDependencies: ["**/*.spec.js"] },
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 80,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: 'all',
+        arrowParens: 'always',
+        semi: true,
+      },
     ],
   },
   settings: {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
-    "import/resolver": {
-      typescript: {},
-    },
   },
-};
+}
