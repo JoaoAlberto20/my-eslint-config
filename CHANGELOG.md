@@ -1,5 +1,11 @@
 # @joaoalbertosv/config-eslint
 
+## 1.6.0
+
+### Minor Changes
+
+- Atualizando depedência de desenvolvimento
+
 ## 1.5.0
 
 ### Minor Changes
