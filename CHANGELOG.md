@@ -1,5 +1,11 @@
 # @joaoalbertosv/config-eslint
 
+## 1.10.0
+
+### Minor Changes
+
+- Add new rules para habilitar no-consolw
+
 ## 1.9.0
 
 ### Minor Changes
