@@ -2,6 +2,7 @@ module.exports = {
   env: {
     es2021: true,
     node: true,
+    jest: true,
   },
   extends: ['airbnb-base', 'plugin:prettier/recommended', "plugin:@typescript-eslint/recommended"],
   parser: '@typescript-eslint/parser',
@@ -13,15 +14,17 @@ module.exports = {
   rules: {
     "camelcase": "warn",
     "no-console": "warn",
+    "comma-dangle": "off",
+    "no-useless-escape": "off",
     "import/no-unresolved": "error",
-    " no-underscore-dangle": "off",
+    "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
     "no-shadow": "off",
-    "no-console": "off",
     "no-useless-constructor": "off",
     "no-empty-function": "off",
     "lines-between-class-members": "off",
+    "@typescript-eslint/no-unused-vars": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
