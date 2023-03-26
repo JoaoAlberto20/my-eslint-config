@@ -1,5 +1,11 @@
 # @joaoalbertosv/config-eslint
 
+## 1.7.0
+
+### Minor Changes
+
+- Add new rules
+
 ## 1.6.0
 
 ### Minor Changes

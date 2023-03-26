@@ -14,6 +14,7 @@ module.exports = {
     "camelcase": "warn",
     "no-console": "warn",
     "import/no-unresolved": "error",
+    " no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "import/prefer-default-export": "off",
     "no-shadow": "off",
@@ -31,6 +32,13 @@ module.exports = {
           match: true,
         },
       },
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
     ],
     "import-helpers/order-imports": [
       "warn",
@@ -56,5 +64,8 @@ module.exports = {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
+    "import/resolver": {
+      "typescript": {}
+    }
   },
 }
