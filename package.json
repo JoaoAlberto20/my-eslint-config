@@ -5,6 +5,10 @@
   "description": "ESLint configuration used by me.",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoAlberto20/my-eslint-config.git"
+  },
   "scripts": {
     "changeset": "changeset",
     "changeset:version": "changeset version",
