@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'airbnb-base',
+    'standard',
     'plugin:prettier/recommended',
   ],
   parser: '@typescript-eslint/parser',
@@ -24,8 +24,6 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
-    "camelcase": "warn",
-    "no-console": "warn",
     'prettier/prettier': ["error", {
       'printWidth': 80,
       'tabWidth': 2,
@@ -57,8 +55,5 @@ module.exports = {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
-    "import/resolver": {
-      "typescript": {}
-    }
   }
 }
