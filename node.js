@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  extends: ['airbnb-base', 'plugin:prettier/recommended', "plugin:@typescript-eslint/recommended"],
+  extends: ['standard', 'plugin:prettier/recommended', "plugin:@typescript-eslint/recommended"],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',

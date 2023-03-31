@@ -4,6 +4,12 @@
 
 ### Minor Changes
 
+- Trcando o airbnb-base pelo standard
+
+## 1.13.0
+
+### Minor Changes
+
 - Desabilitando a regra de import prefer default
 
 ## 1.12.0

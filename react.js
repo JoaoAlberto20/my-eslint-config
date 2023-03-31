@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'airbnb-base',
+    'standard',
     'plugin:prettier/recommended'
   ],
   parser: '@typescript-eslint/parser',
@@ -33,7 +33,6 @@ module.exports = {
       'semi': true,
       'endOfLine': 'auto',
     }],
-    "import/prefer-default-export": "off",
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'jsx-a11y/alt-text': [
@@ -53,8 +52,8 @@ module.exports = {
     react: {
       version: 'detect',
     },
-    "import/resolver": {
-      "typescript": {}
-    }
+    'import/parsers': {
+      [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
+    },
   }
 }
