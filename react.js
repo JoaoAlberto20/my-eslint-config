@@ -33,6 +33,7 @@ module.exports = {
       'semi': true,
       'endOfLine': 'auto',
     }],
+    "import/prefer-default-export": "off",
     'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     'jsx-a11y/alt-text': [
