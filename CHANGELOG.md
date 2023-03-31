@@ -1,5 +1,11 @@
 # @joaoalbertosv/config-eslint
 
+## 1.12.0
+
+### Minor Changes
+
+- 09e13d2: Arrumando o problema de imprtação de libs
+
 ## 1.11.0
 
 ### Minor Changes
